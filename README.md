@@ -7,3 +7,5 @@ Material und Code zum Unterricht in WMC
 -   Emmet
 -   Live Server
 -   Prettier
+
+ORF-Challenge Deadline 12. Nov.
