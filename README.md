@@ -1,6 +1,13 @@
 # sj23-24-34aaif-wmc1
 
-Material und Code zum Unterricht in WMC
+## Abgaben
+
+Beurteilung: 
+
+1) html         15%
+2) selektoren   10%
+3) ORF Challenge 35% (Deadline 15.11. 12:00)
+4) Travel Site  40%
 
 ## Hilfreiche Tools der Entwicklungsumgebung
 
@@ -8,5 +15,3 @@ Material und Code zum Unterricht in WMC
 -   Live Server
 -   Prettier
 
-ORF-Challenge Deadline 12. Nov.
-noch eine Änderung ....
