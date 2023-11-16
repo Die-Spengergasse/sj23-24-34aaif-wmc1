@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kontakt</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!--MAIN NAV-->
+<nav class="site-nav">
+  <button onclick="this.classList.toggle('show-menu')">Menü</button>
+  <ul>
+    <li><a href="index.html">News</a></li>
+    <li><a href="#">Ö3 Top 40</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
+
+<!--  HEADER -->
+<!--Wo bin ich-->
+<header class="site-header">
+  <h1>
+    <a href="#">
+      <span>NEWS</span>
+      <img id="logo" class="v-align" src="https://orf.at/mojo/1_4_1/storyserver//news/news/images/target_news.svg"
+           alt="Österrischer Rundfunk" width="150" height="100">
+    </a>
+  </h1>
+  <address>
+    ORF-Zentrum<br>
+    Würzburggase 30<br>
+    1136 Wien<br>
+  </address>
+</header>
+
+<main>
+
+  <form action="#" method="post">
+
+    <!--  Name  -->
+    <label for="name">Ihr Name:</label>
+    <input type="text" id="name" name="bla" required>
+
+    <!-- Email   -->
+    <label for="email">Ihre Email:</label>
+    <input type="email" id="email" name="foo" required>
+
+    <!--  Message  -->
+    <label for="message">Ihre Nachricht:</label>
+    <textarea id="message" name="lol" rows="10"required></textarea>
+
+    <!-- DSGVO-->
+    <label for="DSGVO">
+      <input type="checkbox" id="DSGVO" name="heee" required>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      Earum explicabo molestiae tenetur totam. Alias delectus dicta eius eligendi
+      expedita iste iusto nesciunt placeat quod repellat suscipit, unde ut veritatis voluptatibus?
+    </label>
+
+
+<!--    <input type="submit">-->
+
+    <button type="submit">Abschicken</button>
+
+
+  </form>
+</main>
+
+
+</body>
+</html>

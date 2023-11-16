@@ -1,0 +1,270 @@
+/* GENERAL STYLES */
+body {
+    max-width: 1000px;
+    margin: 0 auto;
+
+    font-family: 'Source Sans Pro', sans-serif;
+    /*font-family: sans-serif;*/
+    font-size: larger;
+    color: #333;
+}
+
+/* responsive images */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* no bullets */
+li {
+    list-style: none;
+}
+
+
+
+/* HEADERS */
+header {
+    background-color: steelblue;
+    color: white;
+    padding: 1rem;
+}
+
+header h1 {
+    margin-bottom: 0;
+}
+
+header h3 {
+    font-size: 2rem;
+}
+
+header.site-header {
+    font-size: larger;
+}
+
+header.site-header img {
+    vertical-align: middle;
+}
+
+
+
+/* MAIN */
+main header, section {
+    margin-bottom: 50px;
+}
+
+
+
+
+
+/* NAV */
+a {
+    color: white;
+    text-decoration: none;
+}
+
+
+nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+
+/* CSS pseudo selector */
+nav li:hover {
+    text-decoration: underline;
+    background-color: steelblue;
+}
+
+
+
+
+/* SITE NAV */
+
+nav.site-nav {
+    margin: 1rem 0;
+    background-color: #16416B;
+}
+
+
+
+/* FOOTER NAV */
+
+nav.footer-nav {
+    padding: 0.5rem;
+    margin-top: 1rem;
+
+    background-color: #16416B;
+    text-transform: uppercase;
+    color: white;
+}
+
+nav.footer-nav li {
+    display: inline-block;
+    padding: 0.5rem;
+}
+
+
+/* FIGURES */
+figure {
+    margin: 0;
+    text-align: center;
+}
+
+figure.zitat {
+    padding: 0.25rem;
+    border-left: 10px solid dodgerblue;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    margin: 20px;
+
+    background-color: aliceblue;
+}
+
+figure.zitat a {
+    color: blue;
+}
+
+
+figure.zitat img {
+    width: 150px;
+    height: auto;
+
+    margin-top: 5px;
+    box-shadow: 2px 3px 2px silver;
+
+    vertical-align: middle;
+}
+
+
+figure.zitat blockquote {
+    display: inline-block;
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+
+
+
+/* 1. Menu Items */
+/* Mobile first */
+nav.site-nav li {
+    /*display: block;*/
+    padding: 1rem;
+    cursor: pointer;
+}
+
+nav.site-nav li:hover {
+    background-color: steelblue;
+}
+
+
+
+/* 2. Menu Button  */
+nav.site-nav button {
+    display: block;
+
+    padding: 0.5rem 1rem;
+    border: 0;
+    margin: 0;
+
+    background: inherit;
+    cursor: pointer;
+
+    font: inherit;
+    color: white;
+    text-align: center;
+}
+
+
+
+/* 3. Menu Hamburger */
+/* SVG Menu Hamburger Icon: https://css-tricks.com/snippets/svg/svg-hamburger-menu/*/
+/* SVG URL Encoder: https://yoksel.github.io/url-encoder/*/
+nav.site-nav button::before {
+    /*content: "Hello World"*/
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 80' width='40' height='40' fill='white'%3E%3Crect width='100' height='20'%3E%3C/rect%3E%3Crect y='30' width='100' height='20'%3E%3C/rect%3E%3Crect y='60' width='100' height='20'%3E%3C/rect%3E%3C/svg%3E");
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 0.5rem;
+    transform: scale(80%);
+}
+
+
+/*  4. Menu ausblenden */
+nav.site-nav ul {
+    /*Variante 1 */
+    /*display: none;*/
+
+    /* Variante 2 */
+    max-height: 0;
+    overflow: hidden;
+    /*padding: 0;*/
+}
+
+
+
+/* 5. Menu einblenden */
+/* Diese Klasse wird über Javascript gesteuert */
+nav.site-nav .show-menu + ul {
+ /*Variante 1 */
+/*display: block;*/
+
+/* Variante 2 */
+max-height: 100vh;
+overflow: visible;
+transition: max-height 0.5s ease;
+}
+
+
+/* Zeige ganzes Menu ab einer Breite von 600px und lass es oben kleben (sticky) */
+@media screen and (min-width: 600px) {
+    nav.site-nav { position: sticky; top: 0 }
+    nav.site-nav ul { max-height: initial; }
+    nav.site-nav li { display: inline-block; }
+    nav.site-nav button { display: none; }
+}
+
+
+
+
+/*  FORMS  */
+form {
+    background-color: whitesmoke;
+    padding: 1rem;
+}
+
+form label {
+    display: block;
+}
+
+form input,
+form textarea {
+    width: 75%;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+/*form input[type="checkbox"] {*/
+input#DSGVO {
+    /* latest CSS scale :-) by Berni */
+    /*scale: 200%;*/
+    width: initial;
+    margin: 0 1rem 0 0.5rem;
+    transform: scale(200%);
+}
+
+form button {
+    color: white;
+    background-color: gray;
+    padding: 0.5rem;
+    border: none;
+    font-size: inherit;
+    cursor: pointer;
+    margin-top: 1.5rem;
+}
+
+
+
+
+
