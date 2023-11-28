@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body {
+            font-size: 3em;
+        }
+        div {
+            margin: 10px;
+            width: 100px;
+            height: 100px;
+            background-color: lightgray;
+            border: 1px solid;
+            display: inline-block;
+        }
+
+        section {
+            position: relative;
+        }
+
+        .a {
+            background-color: aliceblue;
+        }
+        .b {
+            background-color: beige;
+            position: relative;
+            top: 60px;
+            left: 60px;
+            z-index: 5;
+        }
+        .c {
+            background-color: chocolate;
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            z-index: 10;
+        }
+        .d {
+            background-color: darkmagenta;
+            position: relative;
+        }
+        .e {
+            background-color: rgb(50, 100, 150);
+            position: fixed;
+            top: 30px;
+            left: 50px;
+            z-index: 2000;
+        }
+        .f {
+            background-color: firebrick;
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            z-index: 3000;
+
+
+        }
+
+    </style>
+</head>
+<body>
+    <section>
+        <div class="a">a</div>
+        <div class="b">b</div>
+        <div class="c">c</div>
+    </section>
+    <section>
+        <div class="d">d</div>
+        <div class="e">e</div>
+        <div class="f">f</div>
+    </section>
+</body>
+</html>
