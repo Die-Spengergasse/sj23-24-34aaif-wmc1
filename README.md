@@ -2,7 +2,7 @@
 
 ## Plan
 
-- 7.12. Flex Prof. Andy Chwatal
+- 7.12. Auflösung GridGarden Flex Prof. Andy Chwatal
 - 14.12. Aufgabe Travelwebsite + Arbeitszeit Deadline: 9.1. 23h
 - 21.12. Arbeitszeit / auftretende Fragen
 - 11.1. Präsentationen
