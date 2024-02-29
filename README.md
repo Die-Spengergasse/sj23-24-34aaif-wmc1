@@ -1,14 +1,23 @@
 # sj23-24-34aaif-wmc1
 
+## 23. Jänner 2024
+
+-   korr abgaben
+
+häufige fehler
+
+-   add files via upload
+-   kopie von css files
+
 ## Plan
 
-- 7.12. Auflösung GridGarden Flex Prof. Andy Chwatal
-- 14.12. Aufgabe Travelwebsite + Arbeitszeit Deadline: 9.1. 23h
-- 21.12. Arbeitszeit / auftretende Fragen
-- 11.1. Präsentationen
-- 18.1. Auflösung / Beginn JS
-- 25.1. JS
-- 1.2. ???
+-   7.12. Auflösung GridGarden Flex Prof. Andy Chwatal
+-   14.12. Aufgabe Travelwebsite + Arbeitszeit Deadline: 9.1. 23h
+-   21.12. Arbeitszeit / auftretende Fragen
+-   11.1. Präsentationen
+-   18.1. Auflösung / Beginn JS
+-   25.1. JS
+-   1.2. ???
 
 ## 2023-11-16 Auflösung ORF Challenge
 
