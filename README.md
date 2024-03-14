@@ -1,5 +1,36 @@
 # sj23-24-34aaif-wmc1
 
+# Beurteilung
+
+-   1 PLF (Javascript, Node)
+-   1 großes Projekt
+-   1 kleinere Abgabe
+
+# Planung:
+
+-   Feb/w3: Einführung JS, Datentypen, (var/let/const)
+-   Feb/w4: Node, Arrays, Math, Random, Demo
+-   Feb/w5: Functions
+-   Mar/w1: Klassen und Objekte
+-   Mar/w2: DOM, Events, Event-Handling
+-   Mar/w3: Demo-App: Mastermind
+-
+-   Osterferien
+-
+-   Apr/w1: Demo-App: Mastermind
+-   Apr/w2: WH
+-   Apr/w3: ----- PLF -----
+-   Apr/w4: Lambdas
+-   Apr/w5: JSON
+-
+-   Mai/w2: async/await, Promises
+-   Mai/w3: fetch-api
+-
+-   Juni/w1: Projektarbeit
+-   Juni/w2: Präsentationen 1/2
+-   Juni/w3: Präsentationen 2/2
+-   Juni/w4: letzte Schulwoche
+
 ## 23. Jänner 2024
 
 -   korr abgaben
