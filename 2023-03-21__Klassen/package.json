@@ -1,0 +1,12 @@
+{
+    "name": "2023-03-21__klassen",
+    "version": "1.0.0",
+    "description": "",
+    "main": "script.js",
+    "scripts": {
+        "test": "node --inspect script.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+}
