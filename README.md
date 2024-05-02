@@ -1,54 +1,67 @@
 # sj23-24-34aaif-wmc1
 
+## Projektarbeit
+
+Bis 16.5.: Konzept Ausarbeitung - Struktur des UI
+
+Präsentationen im Juni. Persönliche Anwesenheit erforderlich!
+
+Endpräsentation (Defensio) am 13. und 20.6.
+
+- semantic html
+- css
+- javascript incl. 8 Punkte Programm
+- interaktion (mind. 3 Interaktionen)
+
 # Beurteilung
 
--   1 PLF (Javascript, Node)
--   1 großes Projekt
--   1 kleinere Abgabe
+- 1 PLF (Javascript, Node)
+- 1 großes Projekt
+- 1 kleinere Abgabe
 
-# Planung:
+# Planung
 
--   Feb/w3: Einführung JS, Datentypen, (var/let/const)
--   Feb/w4: Node, Arrays, Math, Random, Demo
--   Feb/w5: Functions
--   Mar/w1: Klassen und Objekte
--   Mar/w2: DOM, Events, Event-Handling
--   Mar/w3: Demo-App: Mastermind
+- Feb/w3: Einführung JS, Datentypen, (var/let/const)
+- Feb/w4: Node, Arrays, Math, Random, Demo
+- Feb/w5: Functions
+- Mar/w1: Klassen und Objekte
+- Mar/w2: DOM, Events, Event-Handling
+- Mar/w3: Demo-App: Mastermind
 -
--   Osterferien
+- Osterferien
 -
--   Apr/w1: Demo-App: Mastermind
--   Apr/w2: WH
--   Apr/w3: ----- PLF -----
--   Apr/w4: Lambdas
--   Apr/w5: JSON
+- Apr/w1: Demo-App: Mastermind
+- Apr/w2: WH
+- Apr/w3: ----- PLF -----
+- Apr/w4: Lambdas
+- Apr/w5: JSON
 -
--   Mai/w2: async/await, Promises
--   Mai/w3: fetch-api
+- Mai/w2: async/await, Promises
+- Mai/w3: fetch-api
 -
--   Juni/w1: Projektarbeit
--   Juni/w2: Präsentationen 1/2
--   Juni/w3: Präsentationen 2/2
--   Juni/w4: letzte Schulwoche
+- Juni/w1: Projektarbeit
+- Juni/w2: Präsentationen 1/2
+- Juni/w3: Präsentationen 2/2
+- Juni/w4: letzte Schulwoche
 
 ## 23. Jänner 2024
 
--   korr abgaben
+- korr abgaben
 
 häufige fehler
 
--   add files via upload
--   kopie von css files
+- add files via upload
+- kopie von css files
 
 ## Plan
 
--   7.12. Auflösung GridGarden Flex Prof. Andy Chwatal
--   14.12. Aufgabe Travelwebsite + Arbeitszeit Deadline: 9.1. 23h
--   21.12. Arbeitszeit / auftretende Fragen
--   11.1. Präsentationen
--   18.1. Auflösung / Beginn JS
--   25.1. JS
--   1.2. ???
+- 7.12. Auflösung GridGarden Flex Prof. Andy Chwatal
+- 14.12. Aufgabe Travelwebsite + Arbeitszeit Deadline: 9.1. 23h
+- 21.12. Arbeitszeit / auftretende Fragen
+- 11.1. Präsentationen
+- 18.1. Auflösung / Beginn JS
+- 25.1. JS
+- 1.2. ???
 
 ## 2023-11-16 Auflösung ORF Challenge
 
@@ -71,7 +84,7 @@ Beurteilung:
 
 ## Hilfreiche Tools der Entwicklungsumgebung
 
--   Emmet
--   Live Server
--   Prettier
--   w3c validator
+- Emmet
+- Live Server
+- Prettier
+- w3c validator
