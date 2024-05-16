@@ -13,13 +13,13 @@ Endpräsentation (Defensio) am 13. und 20.6.
 - javascript incl. 8 Punkte Programm
 - interaktion (mind. 3 Interaktionen)
 
-# Beurteilung
+## Beurteilung
 
 - 1 PLF (Javascript, Node)
 - 1 großes Projekt
 - 1 kleinere Abgabe
 
-# Planung
+## Planung
 
 - Feb/w3: Einführung JS, Datentypen, (var/let/const)
 - Feb/w4: Node, Arrays, Math, Random, Demo

@@ -2,33 +2,31 @@
 // - Holds the state of the application
 // - This is the single source of truth for the application state
 
-
-state = {
-  todos: [
-    {text: 'CABS lernen', completed: false},
-    {text: 'NSCS lernen', completed: true},
-    {text: 'POS/Theorie lernen', completed: false},
-    {text: 'WMC programmieren', completed: false}
-  ]
-}
-
+stateTemplate = {
+    todos: [
+        { text: 'CABS lernen', completed: false },
+        { text: 'NSCS lernen', completed: true },
+        { text: 'POS/Theorie lernen', completed: false },
+        { text: 'WMC programmieren', completed: false }
+    ]
+};
 
 // 2. STATE ACCESSORS/MUTATORS FN'S
 // - Functions that allow us to get and set the state
 // - Here we will create functions to add and remove todos
 function addNewTodoItemToState(text) {
-  state.todos.push({text: text, completed: false});
+    state.todos.push({ text: text, completed: false });
 }
 
 function toggleTodoState(todoObject) {
-  todoObject.completed = !todoObject.completed;
+    todoObject.completed = !todoObject.completed;
 }
 
 function deleteTodoObjectFromState(todoObject) {
-  let idx = state.todos.indexOf(todoObject);
-  if (idx !== -1) {
-    state.todos.splice(idx, 1);
-  }
+    let idx = state.todos.indexOf(todoObject);
+    if (idx !== -1) {
+        state.todos.splice(idx, 1);
+    }
 }
 
 // 3. DOM Node Refs
@@ -39,29 +37,27 @@ const todoListDone = document.getElementById('todo-list-done');
 const addBtn = document.getElementById('todo-add');
 const newTodoText = document.getElementById('todo-input');
 
-
 // 4. DOM Node Creation Fn's
 // - Dynamic creation of DOM nodes needed upon user interaction
 // - Here we will create a function that will create a todo item
 function createTodoElement(todo) {
-  const listItem = document.createElement('li');
-  listItem.textContent = todo.text;
+    const listItem = document.createElement('li');
+    listItem.textContent = todo.text;
 
-  const cb = document.createElement('input');
-  cb.type = 'checkbox';
-  cb.checked = todo.completed;
-  cb.addEventListener('change', event => onTodoStateChanged(todo));
+    const cb = document.createElement('input');
+    cb.type = 'checkbox';
+    cb.checked = todo.completed;
+    cb.addEventListener('change', (event) => onTodoStateChanged(todo));
 
-  const delBtn = document.createElement('button');
-  delBtn.textContent = 'delete';
-  delBtn.addEventListener('click', event => onTodoObjectDelete(todo));
+    const delBtn = document.createElement('button');
+    delBtn.textContent = 'delete';
+    delBtn.addEventListener('click', (event) => onTodoObjectDelete(todo));
 
-  listItem.prepend(cb);
-  listItem.append(delBtn);
+    listItem.prepend(cb);
+    listItem.append(delBtn);
 
-  return listItem;
+    return listItem;
 }
-
 
 // 5. RENDER FN
 // - These functions will render the application state to the DOM
@@ -69,20 +65,21 @@ function createTodoElement(todo) {
 // - IMPORTANT TAKEAWAY: The state drives the UI, any state change should trigger a re-render of the UI
 
 function render() {
-  todoList.innerHTML = '';
-  for (let todoItem of state.todos) {
-    if (!todoItem.completed) {
-      const li = createTodoElement(todoItem);
-      todoList.appendChild(li);
+    todoList.innerHTML = '';
+    for (let todoItem of state.todos) {
+        if (!todoItem.completed) {
+            const li = createTodoElement(todoItem);
+            todoList.appendChild(li);
+        }
     }
-  }
-  todoListDone.innerHTML = '';
-  for (let todoItem of state.todos) {
-    if (todoItem.completed) {
-      const li = createTodoElement(todoItem);
-      todoListDone.appendChild(li);
+    todoListDone.innerHTML = '';
+    for (let todoItem of state.todos) {
+        if (todoItem.completed) {
+            const li = createTodoElement(todoItem);
+            todoListDone.appendChild(li);
+        }
     }
-  }
+    localStorage.setItem('state', JSON.stringify(state));
 }
 
 // 6. EVENT HANDLERS
@@ -91,29 +88,27 @@ function render() {
 // - The naming convention for the event handlers is `on<Event>`
 // - Here we will create a function that will handle the add button click
 function onAddBtnPressed() {
-  // alert('button pressed: ' + newTodoText.value);
-  addNewTodoItemToState(newTodoText.value);
-  render();
+    // alert('button pressed: ' + newTodoText.value);
+    addNewTodoItemToState(newTodoText.value);
+    render();
 }
 
 function onTodoStateChanged(todoObject) {
-  toggleTodoState(todoObject);
-  render();
+    toggleTodoState(todoObject);
+    render();
 }
 
 function onTodoObjectDelete(todoObject) {
-  deleteTodoObjectFromState(todoObject);
-  render();
+    deleteTodoObjectFromState(todoObject);
+    render();
 }
 
 // 7. INIT BINDINGS
 // - These are the initial bindings of the event handlers
 
-addBtn.addEventListener('click', event => onAddBtnPressed());
-
-
+addBtn.addEventListener('click', (event) => onAddBtnPressed());
+let stateStr = localStorage.getItem('state');
+const state = stateStr ? JSON.parse(stateStr) : stateTemplate;
 // 8. INITIAL RENDER
 // - Here will call the render function to render the initial state of the application
 render();
-
-
