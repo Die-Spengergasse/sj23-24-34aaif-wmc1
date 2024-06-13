@@ -2,6 +2,14 @@
 
 ## Projektarbeit
 
+### Abgabe bis 12.6.
+
+8 Punkte Programm: <2024-04-04__js-todo-app/js/app2.js>
+
+13.6.: kucukakyuz, todorovic, azriba, batajev, pavlov,
+
+20.6. sehr gewünscht markovic, omar, elzanary,
+
 Bis 16.5.: Konzept Ausarbeitung - Struktur des UI
 
 Präsentationen im Juni. Persönliche Anwesenheit erforderlich!
